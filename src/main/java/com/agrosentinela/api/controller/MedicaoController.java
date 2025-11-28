@@ -20,7 +20,6 @@ public class MedicaoController {
 
     @PostMapping
     public medicao cadastrar(@RequestBody medicao medicao) {
-        // Aqui poderíamos adicionar lógica de alerta (Ex: Se umidade < 20, enviar alerta)
         return repository.save(medicao);
     }
 }
