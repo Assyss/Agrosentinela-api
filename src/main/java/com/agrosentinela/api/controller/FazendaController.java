@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import com.agrosentinela.api.model.Fazenda;
 import com.agrosentinela.api.repository.FazendaRepository;
 
-@RestController // Diz que esta classe recebe requisições Web
-@RequestMapping("/fazendas") // O endereço será: http://localhost:8080/fazendas
+@RestController 
+@RequestMapping("/fazendas") 
 public class FazendaController {
 
     @Autowired // Injeção de Dependência (O Spring cria o Repository para ti)
